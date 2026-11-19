@@ -6,9 +6,9 @@ Solitude 是一个卡片式 Typecho 博客主题，包含文章目录、归档�
 
 ## 安装
 
-1. 从 GitHub Releases 下载 `Solitude-1.0.0.zip`。解压后将 `Solitude/` 放入 Typecho 的 `usr/themes/`，确保 `index.php` 位于 `Solitude/` 根目录。CSS 和 JavaScript 随主题提供，上传后即可使用。
+1. 从 [GitHub Releases](https://github.com/everfu/typecho-solitude/releases) 下载 `Solitude-1.0.0.zip`。解压后将 `Solitude/` 放入 Typecho 的 `usr/themes/`，确保 `index.php` 位于 `Solitude/` 根目录。CSS 和 JavaScript 随主题提供，上传后即可使用。
 2. 在「控制台 → 外观」启用 Solitude，然后打开「外观 → 设置外观」填写并保存站点设置。
-3. 如需短代码、特色内容管理或本地搜索，从独立的 `typecho-plugin-solitudex` 项目获取 `SolitudeX-1.0.0.zip`。解压后将 `SolitudeX/` 放入 Typecho 的 `usr/plugins/`，再到「控制台 → 插件」启用。
+3. 如需短代码、特色内容管理或本地搜索，获取 `SolitudeX-1.0.0.zip` 后，将解出的 `SolitudeX/` 放入 Typecho 的 `usr/plugins/`，再到「控制台 → 插件」启用。
 4. 启用配套插件后，可在主题的「页面设置 → 页面初始化」补建特色页面。
 
 已有站点升级时，先备份数据库和上传文件，再覆盖同名目录。
