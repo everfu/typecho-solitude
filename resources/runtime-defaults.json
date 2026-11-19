@@ -1,0 +1,619 @@
+{
+  "site": {
+    "name": {
+      "class": "text",
+      "custom": "Solitude"
+    },
+    "icon": "/img/logo.png"
+  },
+  "nav": {
+    "group": {
+      "Project": [
+        {
+          "name": "Typecho",
+          "url": "https://typecho.org/",
+          "icon": "/img/logo.png"
+        }
+      ]
+    },
+    "right": {
+      "random": true,
+      "custom": []
+    }
+  },
+  "hometop": {
+    "enable": true,
+    "banner": {
+      "title": "Write and create with Solitude",
+      "desc": "A Typecho theme with custom pages and content components.",
+      "icon": {}
+    },
+    "group": {},
+    "recommendList": []
+  },
+  "aside": {
+    "position": 1,
+    "home": {
+      "noSticky": "about",
+      "Sticky": "allInfo"
+    },
+    "post": {
+      "noSticky": "about",
+      "Sticky": "newestPost,allInfo"
+    },
+    "page": {
+      "noSticky": "about",
+      "Sticky": "newestPost,allInfo"
+    },
+    "my_card": {
+      "author": {
+        "img": "/img/logo.png",
+        "emoji": null,
+        "sticker": null
+      },
+      "description": "A Typecho theme for your personal blog.",
+      "content": "Let your content take center stage.",
+      "state": {
+        "morning": "Good morning",
+        "noon": "Good noon",
+        "afternoon": "Good afternoon",
+        "night": "Good evening",
+        "goodnight": "Good night"
+      },
+      "witty_words": [
+        "Capture life in words",
+        "Create something with code"
+      ],
+      "information": [
+        {
+          "name": "GitHub",
+          "url": "https://github.com/everfu",
+          "icon": "fab fa-github"
+        }
+      ]
+    },
+    "toc": {
+      "post": true,
+      "page": true,
+      "vague": true
+    },
+    "tags": {
+      "enable": true,
+      "limit": 20,
+      "highlight_list": []
+    },
+    "siteinfo": {
+      "postcount": true,
+      "wordcount": true,
+      "updatetime": true,
+      "runtimeenable": true,
+      "runtime": "2023-04-20 00:00:00"
+    },
+    "state": {
+      "morning": "Good morning",
+      "noon": "Good noon",
+      "afternoon": "Good afternoon",
+      "night": "Good evening",
+      "goodnight": "Good night"
+    },
+    "witty_words": [
+      "Capture life in words",
+      "Create something with code"
+    ],
+    "witty_comment": {
+      "prefix": "Hello, ",
+      "back": "Welcome back, "
+    }
+  },
+  "page": {
+    "error": true,
+    "tags": true,
+    "categories": true,
+    "archives": 0,
+    "links": {
+      "async_threshold": 200
+    },
+    "default": {
+      "cover": [
+        "/img/default.avif"
+      ]
+    }
+  },
+  "post": {
+    "default": {
+      "cover": [
+        "/img/default.avif"
+      ],
+      "locate": "China",
+      "copyright": {
+        "enable": true,
+        "author": "/img/logo.png",
+        "author_background": "",
+        "license": "CC BY-NC-SA 4.0",
+        "licenurl": "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+      }
+    },
+    "meta": {
+      "date": true,
+      "updated": true,
+      "locate": false,
+      "wordcount": true,
+      "readtime": true,
+      "pv": false,
+      "comment": false
+    },
+    "award": {
+      "enable": false,
+      "list": []
+    },
+    "share": {
+      "enable": false,
+      "list": []
+    },
+    "rss": "/index.xml",
+    "covercolor": {
+      "enable": true,
+      "mode": "local",
+      "api": "https://api.qjqq.cn/api/Imgcolor?img=",
+      "time": 43200000
+    }
+  },
+  "theme_color": {
+    "dark": "#ffc848",
+    "light": "#425aef",
+    "nav_hover_text": {
+      "dark": "#1b1c20",
+      "light": "#ffffff"
+    }
+  },
+  "display_mode": {
+    "type": "auto"
+  },
+  "font": {
+    "font_size": "16px",
+    "code_font_size": "16px",
+    "font_family": "system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif",
+    "code_font_family": "ui-monospace, SFMono-Regular, Menlo, monospace"
+  },
+  "index_post_list": {
+    "direction": "column",
+    "column": 2,
+    "cover": "both"
+  },
+  "related_post": {
+    "enable": true,
+    "limit": 3,
+    "date_type": "created"
+  },
+  "expire": {
+    "enable": false,
+    "time": 30,
+    "position": "top",
+    "text_prev": "This post was last updated ",
+    "text_next": " days ago. Some information may be out of date."
+  },
+  "right_menu": {
+    "enable": true,
+    "exclude": [
+      "music"
+    ],
+    "commentBarrage": false,
+    "ctrlOriginalMenu": false,
+    "translate": false,
+    "music": {
+      "start": "Play",
+      "stop": "Pause",
+      "back": "Previous",
+      "forward": "Next",
+      "copyMusicName": "Copy title"
+    },
+    "limit": 50,
+    "author": "Author: ",
+    "link": "Link: ",
+    "source": "Source: Solitude",
+    "info": "",
+    "img_error": "This image cannot be copied or downloaded.",
+    "mode": {
+      "dark": "Dark",
+      "light": "Light"
+    },
+    "barrage": {
+      "open": "Show comments",
+      "close": "Hide comments"
+    },
+    "custom_list": []
+  },
+  "copy": {
+    "enable": true,
+    "copyright": {
+      "enable": false,
+      "limit": 50
+    }
+  },
+  "mermaid": true,
+  "chart": true,
+  "typeit": true,
+  "console": {
+    "enable": true,
+    "recentComment": {
+      "enable": false,
+      "storage": 0.2
+    },
+    "card": {
+      "tags": true,
+      "archive": "month"
+    }
+  },
+  "translate": false,
+  "rightside": {
+    "enable": true,
+    "hide": {
+      "enable": true,
+      "translate": true,
+      "mode": true,
+      "aside": true
+    }
+  },
+  "footer": {
+    "randomlink": false,
+    "information": {
+      "author": "/img/logo.png",
+      "left": [
+        {
+          "name": "GitHub",
+          "url": "https://github.com/everfu",
+          "icon": "fab fa-github"
+        }
+      ],
+      "right": [
+        {
+          "name": "RSS",
+          "url": "/index.xml",
+          "icon": "fas fa-rss"
+        }
+      ]
+    },
+    "group": {
+      "Explore": [
+        {
+          "name": "Posts",
+          "url": "/archives/"
+        },
+        {
+          "name": "Categories",
+          "url": "/categories/"
+        }
+      ],
+      "About": [
+        {
+          "name": "Theme",
+          "url": "/about/"
+        },
+        {
+          "name": "Friends",
+          "url": "/links/"
+        }
+      ]
+    },
+    "links": [],
+    "beian": []
+  },
+  "errorpage": {
+    "img": "/img/404.avif",
+    "text": "=awa= Page Not Found",
+    "recommendList": true
+  },
+  "capsule": {
+    "enable": true,
+    "id": "7298728834454061071",
+    "server": "qishui",
+    "type": "playlist",
+    "volume": 0.8
+  },
+  "music": {
+    "enable": false,
+    "id": "",
+    "server": "netease",
+    "type": "playlist",
+    "volume": 0.8,
+    "mutex": true,
+    "order": "list"
+  },
+  "meting_api": "https://meting.efu.me/?server=:server&type=:type&id=:id&r=:r",
+  "keyboard": {
+    "enable": true,
+    "list": [
+      {
+        "modifier": "shift",
+        "key": "D",
+        "action": "toggleTheme"
+      },
+      {
+        "modifier": "mod",
+        "key": "F",
+        "action": "openSearch"
+      },
+      {
+        "modifier": "shift",
+        "key": "K",
+        "action": "toggleKeyboard"
+      }
+    ]
+  },
+  "lazyload": {
+    "enable": true,
+    "field": "site",
+    "placeholder": "",
+    "errorimg": "/img/error_load.avif",
+    "error": "/img/error_load.avif"
+  },
+  "loading": {
+    "fullpage": false
+  },
+  "highlight": {
+    "enable": true,
+    "copy": true,
+    "line_numbers": true,
+    "themes": {
+      "light": "github-light",
+      "dark": "github-dark"
+    },
+    "max_height": 360
+  },
+  "lightbox": "fancybox",
+  "memorial": {
+    "enable": false,
+    "date": []
+  },
+  "katex": {
+    "enable": true,
+    "per_page": true,
+    "copytex": true
+  },
+  "pwa": {
+    "enable": true,
+    "manifest": "/manifest.json",
+    "theme_color": "#425aef",
+    "mask_icon": "/img/pwa/favicon.png",
+    "apple_touch_icon": "/img/pwa/favicon.png",
+    "favicon_32_32": "/img/pwa/favicon_32.png",
+    "favicon_16_16": "/img/pwa/favicon_16.png",
+    "bookmark_icon": "/img/pwa/favicon.png"
+  },
+  "comment": {
+    "use": "",
+    "commentBarrage": false,
+    "lazyload": false,
+    "count": false,
+    "sidebar": false,
+    "avatar": "https://weavatar.com",
+    "hot_tip": {
+      "enable": false,
+      "count": 3
+    },
+    "newest_comment": {
+      "enable": false,
+      "storage": 0.5,
+      "limit": 5
+    }
+  },
+  "search": {
+    "enable": true,
+    "type": "local",
+    "tags": [
+      "Typecho",
+      "Solitude",
+      "Markdown"
+    ],
+    "local": {
+      "preload": true,
+      "CDN": "/search.xml"
+    },
+    "algolia": {
+      "appId": "",
+      "apiKey": "",
+      "indexName": "",
+      "hits": {
+        "per_page": 6
+      }
+    },
+    "docsearch": {
+      "appId": "",
+      "apiKey": "",
+      "indexName": "",
+      "placeholder": "",
+      "option": {}
+    }
+  },
+  "envelope": {
+    "enable": false,
+    "line": 10,
+    "speed": 20,
+    "hover": true,
+    "loop": true,
+    "page": "/message/"
+  },
+  "brevity": {
+    "enable": true,
+    "home_mini": false,
+    "music": false,
+    "page": "/essay/",
+    "style": 1,
+    "strip": 30
+  },
+  "recent_comments": {
+    "enable": false,
+    "limit": 50,
+    "cache": 0.2,
+    "page": "/recentcomments/"
+  },
+  "verify_site": [],
+  "extends": {
+    "head": [],
+    "body": []
+  },
+  "cdn": {
+    "fontawesome": "https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@7.3.0/css/all.min.css",
+    "snackbar": "https://cdn.jsdelivr.net/npm/node-snackbar@0.1.16/dist/snackbar.min.js",
+    "lazyload": "https://cdn.jsdelivr.net/npm/vanilla-lazyload@19.1.3/dist/lazyload.iife.min.js",
+    "fancyapps_css": "https://cdn.jsdelivr.net/npm/@fancyapps/ui@6.1.14/dist/fancybox/fancybox.css",
+    "fancyapps_js": "https://cdn.jsdelivr.net/npm/@fancyapps/ui@6.1.14/dist/fancybox/fancybox.umd.js",
+    "mermaid": "https://cdn.jsdelivr.net/npm/mermaid@11.16.0/dist/mermaid.min.js",
+    "chart": "https://cdn.jsdelivr.net/npm/chart.js@4.5.1/dist/chart.umd.min.js",
+    "abcjs": "https://cdn.jsdelivr.net/npm/abcjs@6.6.4/dist/abcjs-basic-min.js",
+    "typeit": "https://cdn.jsdelivr.net/npm/typeit@8.8.7/dist/index.umd.min.js",
+    "katex_css": "https://cdn.jsdelivr.net/npm/katex@0.16.47/dist/katex.min.css",
+    "katex_copytex": "https://cdn.jsdelivr.net/npm/katex@0.16.47/dist/contrib/copy-tex.min.js",
+    "aplayer_css": "https://cdn.jsdelivr.net/npm/aplayer@1.10.1/dist/APlayer.min.css",
+    "aplayer_js": "https://cdn.jsdelivr.net/npm/aplayer@1.10.1/dist/APlayer.min.js",
+    "meting_js": "https://cdn.jsdelivr.net/npm/meting@2.0.2/dist/Meting.min.js",
+    "colorthief": "https://cdn.jsdelivr.net/npm/colorthief@3.4.0/dist/umd/color-thief.global.min.js",
+    "algoliasearch": "https://cdn.jsdelivr.net/npm/algoliasearch@5.46.3/dist/lite/builds/browser.umd.js",
+    "instantsearch_css": "https://cdn.jsdelivr.net/npm/instantsearch.css@8.9.0/themes/satellite-min.css",
+    "instantsearch": "https://cdn.jsdelivr.net/npm/instantsearch.js@4.84.0/dist/instantsearch.production.min.js",
+    "docsearch_css": "https://cdn.jsdelivr.net/npm/@docsearch/css@4.5.0/dist/style.css",
+    "docsearch_js": "https://cdn.jsdelivr.net/npm/@docsearch/js@4.5.0/dist/umd/index.js"
+  },
+  "root": "/",
+  "runtime": "2023-04-20 00:00:00",
+  "localsearch": {
+    "preload": true,
+    "path": "/search.xml"
+  },
+  "algolia": {
+    "appId": "",
+    "apiKey": "",
+    "indexName": "",
+    "hits": {
+      "per_page": 6
+    }
+  },
+  "randomlink": false,
+  "friend_links": {
+    "async": false,
+    "path": "/links.json",
+    "total": 4,
+    "placeholder": "",
+    "default_avatar": "/img/default_avatar.avif",
+    "more_url": "/links/",
+    "loading": "Loading links…",
+    "error": "Unable to load links.",
+    "retry": "Retry",
+    "random": "Visit a random friend link",
+    "to": "Visit",
+    "more": "More",
+    "default_sort": "Default order",
+    "random_sort": "Random order",
+    "sort_label": "Change link order",
+    "scroll_left": "Scroll left",
+    "scroll_right": "Scroll right"
+  },
+  "feature_modules": {
+    "search": "local",
+    "friend_links": true,
+    "keyboard": true,
+    "music": true,
+    "right_menu": true,
+    "translate": false,
+    "covercolor": "local"
+  },
+  "lang": {
+    "ui": {
+      "recommendations": "Recommendations",
+      "recommendationItem": "Show recommendation {index}",
+      "copyEquipment": "Copy equipment name: {name}",
+      "quoteEquipment": "Quote this item in a comment",
+      "applyFriendLink": "Suggest a link",
+      "postUnit": " posts",
+      "careerStages": "Career stages",
+      "favoriteHeroes": "Favorite champions",
+      "externalLink": "External link",
+      "internalLink": "Internal link",
+      "untitled": "Untitled",
+      "cardRating": "Rating {rating} / 5",
+      "cardDetails": "View details: {name}",
+      "repoLoading": "Loading repository information…",
+      "loading": "Loading",
+      "repoEmpty": "This repository has no description yet.",
+      "repoUpdated": "Updated",
+      "repoError": "Repository information is unavailable. Please try again later.",
+      "loadFailed": "Loading failed",
+      "contentTabs": "Content tabs",
+      "musicPrevious": "Previous track",
+      "musicPlay": "Play",
+      "musicPause": "Pause",
+      "musicNext": "Next track",
+      "musicMute": "Mute or restore volume",
+      "musicOrder": "Change playback order",
+      "musicLoop": "Change repeat mode",
+      "musicPlaylist": "Show or hide playlist",
+      "musicLyrics": "Show or hide lyrics",
+      "musicPlayTitle": "Play {title}",
+      "musicPlayIndex": "Play track {index}",
+      "musicNoLyrics": "No lyrics available",
+      "musicHall": "Music hall",
+      "unknownArtist": "Unknown artist",
+      "docsearchUnavailable": "DocSearch is unavailable. Check appId, apiKey, and indexName."
+    },
+    "theme": {
+      "dark": "Dark mode enabled",
+      "light": "Light mode enabled"
+    },
+    "copy": {
+      "success": "Copied",
+      "error": "Copy failed"
+    },
+    "code": {
+      "copy": "Copy",
+      "copied": "Copied",
+      "expand": "Expand all"
+    },
+    "backtop": "Back to top",
+    "day": " days",
+    "f12": "Developer mode enabled",
+    "totalk": "Write a comment directly",
+    "time": {
+      "day": "days ago",
+      "hour": "hours ago",
+      "just": "just now",
+      "min": "minutes ago",
+      "month": "months ago"
+    },
+    "search": {
+      "empty": "No result for ${query}",
+      "hit": "Found ${hits} results in ${time} ms",
+      "placeholder": "Search posts",
+      "count": "${count} results found",
+      "loading": "Searching…",
+      "error": "Unable to load the search index. Please retry.",
+      "retry": "Retry",
+      "previous": "Previous page",
+      "next": "Next page"
+    },
+    "comments": {
+      "loading": "Loading comments…",
+      "empty": "No comments yet",
+      "error": "Unable to load comments. Please try again later.",
+      "image": "Image",
+      "link": "Link",
+      "code": "Code",
+      "emoji": "Emoji",
+      "anonymous": "Anonymous",
+      "participants": "Comment participants: ${names}",
+      "moreParticipants": "${count} more participants"
+    },
+    "barrage": {
+      "title": "Comments"
+    }
+  },
+  "covercolor": {
+    "enable": true,
+    "mode": "local",
+    "api": "https://api.qjqq.cn/api/Imgcolor?img=",
+    "time": 43200000
+  },
+  "comment_runtime": {
+    "default_avatar": "/img/default_avatar.avif",
+    "barrage_script": "/js/third_party/barrage.min.js"
+  }
+}

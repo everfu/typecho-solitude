@@ -1,0 +1,1 @@
+import{r as e}from"../site-DVxf9gDX6xqs.js";import{n as t,r as n,t as r}from"./shared-BY015AELvajW.js";var i=async t=>{let n=await fetch(`${e.config.covercolor.api}${encodeURIComponent(t)}`);if(!n.ok)throw Error(`Cover color API returned ${n.status}`);return(await n.json()).RGB},a=(a=!1)=>{let o=!a&&e.page.color;return o?r(o):n(t(a),i,a)};export{a as coverColor};

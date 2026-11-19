@@ -1,0 +1,1 @@
+import{r as e}from"../site-DVxf9gDX6xqs.js";import{n as t,r as n,t as r}from"./shared-BY015AELvajW.js";var i=async e=>{let t=await fetch(`${e}?imageAve`);if(!t.ok)throw Error(`Image average color returned ${t.status}`);let{RGB:n}=await t.json();return n?`#${n.replace(/^0x/,``)}`:null},a=(a=!1)=>{let o=!a&&e.page.color;return o?r(o):n(t(a),i,a)};export{a as coverColor};

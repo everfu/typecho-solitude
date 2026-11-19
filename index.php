@@ -1,0 +1,22 @@
+<?php
+/**
+ * Solitude · 卡片式博客主题，支持 Typecho 1.3 / PHP 8.2+。
+ * @package Solitude
+ * @author everfu
+ * @version 1.0.0
+ */
+if(!defined('__TYPECHO_ROOT_DIR__'))exit;
+use Solitude\Theme;use Solitude\View;
+require_once __DIR__.'/functions.php';require_once __DIR__.'/core/View.php';
+Theme::render('header',['archive'=>$this,'type'=>'solitude','title'=>Theme::t('home')]);
+$all=Theme::posts(true);$current=max(1,(int)$this->request->get('page',1));$size=(int)Theme::options()->pageSize;$posts=array_slice($all,($current-1)*$size,$size);
+$normalize=fn($url)=>preg_replace('~(?:/|\.html)$~','',parse_url(Theme::url($url),PHP_URL_PATH));
+$hidden=[];foreach(Theme::posts() as $post)if(Theme::field($post,'home','1')==='0')$hidden[]=$normalize(Theme::permalink($post));
+$items=array_values(array_filter(Theme::get('hometop.recommendList',[]),fn($item)=>is_array($item)&&($item['enable']??true)&&!empty($item['title'])&&!empty($item['url'])&&!in_array($normalize($item['url']),$hidden,true)));
+foreach(Theme::publicPosts() as $post){if(Theme::field($post,'home','1')==='0')continue;if(count($items)>=5)break;if(!array_filter($items,fn($item)=>$normalize($item['url'])===$normalize(Theme::permalink($post))))$items[]=['title'=>$post->title,'url'=>Theme::permalink($post),'cover'=>Theme::cover($post),'label'=>$post->categories[0]['name']??''];}
+$items=array_slice($items,0,5);
+?>
+<div class="home-main-flow tw:flex tw:flex-col">
+<?php if($current===1&&Theme::get('hometop.enable')&&$items):$first=$items[0];?><div id="home_top"><div class="home-center" id="home_center" style="--current-theme:var(--efu-main);--current-theme-op:color-mix(in srgb,var(--efu-main) 14%,transparent);--current-theme-op-deep:color-mix(in srgb,var(--efu-main) 87%,transparent)"><div class="home-center-content tw:flex tw:overflow-hidden"><div class="home-center-left tw:relative tw:overflow-hidden"><div class="home-center-banner tw:relative tw:overflow-hidden" data-mobile-loop="false"><?php foreach($items as $i=>$item):?><div class="home-center-banner-item has-banner-cover <?=$i===0?'active':''?>" role="link" tabindex="<?=$i===0?'0':'-1'?>" aria-hidden="<?=$i===0?'false':'true'?>" data-index="<?=$i?>" data-link="<?=Theme::e(Theme::url($item['url']))?>" data-title="<?=Theme::e($item['title'])?>" data-label="<?=Theme::e($item['label']??'')?>" data-color="<?=Theme::e($item['color']??'')?>"><div class="home-center-cover"><img class="home-center-cover-img nolazyload" src="<?=Theme::e(Theme::media($item['cover']??null))?>" alt="<?=Theme::e($item['title'])?>" loading="<?=$i===0?'eager':'lazy'?>" fetchpriority="<?=$i===0?'high':'low'?>" decoding="async"></div><div class="home-center-mask"></div></div><?php endforeach;?></div><div class="home-center-title"><a class="home-center-title-link" href="<?=Theme::e(Theme::url($first['url']))?>"><?=Theme::e($first['title'])?></a><div class="home-center-title-tag"><i class="fas fa-star"></i><span><?=Theme::e($first['label']??'')?></span></div><div class="home-center-indicators" aria-label="<?=Theme::e(Theme::t('recommendations'))?>"><?php foreach($items as $i=>$item):?><button class="home-center-indicator <?=$i===0?'active':''?>" type="button" data-index="<?=$i?>" aria-label="推荐文章 <?=$i+1?>" aria-current="<?=$i===0?'true':'false'?>"></button><?php endforeach;?></div></div></div><?php if(count($items)>1):?><div class="home-center-right"><div class="home-center-list"><?php foreach($items as $i=>$item):?><div class="home-center-item <?=$i===0?'active':''?>" data-index="<?=$i?>"><div class="home-center-item-icon"><img class="nolazyload" src="<?=Theme::e(Theme::media($item['cover']??null))?>" alt="" loading="lazy" decoding="async" fetchpriority="low"></div><div class="home-center-item-title"><a href="<?=Theme::e(Theme::url($item['url']))?>"><?=Theme::e($item['title'])?></a></div></div><?php endforeach;?></div></div><?php endif;?></div></div></div><?php endif;?>
+<?php View::categoryBar();?><main class="layout layout--home" id="content-inner"><div class="home-layout-row tw:flex"><div id="home"><div class="recent-posts" id="recent-posts"><?php foreach($posts as $i=>$p)View::card($p,$i);if(!$posts)echo '<p class="empty-state">'.Theme::e(Theme::t('archiveEmpty')).'</p>';View::pagination($current,max(1,(int)ceil(count($all)/$size)),'/');?></div></div><?php Theme::render('aside',['scope'=>'home']);?></div></main></div>
+<?php Theme::render('footer',['archive'=>$this]); ?>

@@ -1,0 +1,10 @@
+Astro Solitude
+Copyright 2026 Solitude contributors
+
+The Typecho adaptation includes styles, browser behavior, demo illustrations,
+and icons from the upstream Solitude projects. Astro Solitude is derived from
+Solitude Hugo (https://github.com/everfu/hugo-solitude). These works are licensed
+under the Apache License, Version 2.0, included in the theme's LICENSE file.
+
+The sample audio and video credits are in public/media/shortcodes/README.md.
+The bundled browser libraries and fonts have their own license files here.

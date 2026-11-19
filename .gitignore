@@ -1,0 +1,24 @@
+# Release archives. Keep assets/public/vendor/ and assets/dist/.
+/dist/
+
+# Local deployment and site data
+/.vercel/
+/.runtime/
+/config.inc.php
+.env
+.env.*
+!.env.example
+!.env.*.example
+*.sqlite
+*.sqlite-*
+*.sqlite3
+*.sqlite3-*
+*.key
+*.pem
+*.srl
+
+# Test output and local files
+test-results/
+playwright-report/
+*.log
+.DS_Store

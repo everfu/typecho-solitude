@@ -1,0 +1,46 @@
+{
+  "links": [
+    {
+      "class_name": "Official resources",
+      "class_desc": "Documentation, source code, and updates",
+      "type": "card",
+      "link_list": [
+        {
+          "name": "Typecho Docs",
+          "link": "https://docs.typecho.org/",
+          "avatar": "/img/logo.png",
+          "topimg": "/img/demo/cover-getting-started-v2.webp",
+          "descr": "Official Typecho documentation",
+          "tag": "Docs"
+        },
+        {
+          "name": "Typecho GitHub",
+          "link": "https://github.com/typecho/typecho",
+          "avatar": "/img/logo.png",
+          "topimg": "/img/demo/cover-shortcodes-v2.webp",
+          "descr": "Typecho source, releases, and issue tracking",
+          "tag": "Source"
+        }
+      ]
+    },
+    {
+      "class_name": "Built with",
+      "class_desc": "Open tools behind Solitude",
+      "type": "item",
+      "link_list": [
+        {
+          "name": "PHP",
+          "link": "https://www.php.net/",
+          "avatar": "/img/logo.png",
+          "descr": "Runtime for the theme and plugin"
+        },
+        {
+          "name": "TypeScript",
+          "link": "https://www.typescriptlang.org/",
+          "avatar": "https://www.typescriptlang.org/favicon-32x32.png",
+          "descr": "Typed browser interactions"
+        }
+      ]
+    }
+  ]
+}

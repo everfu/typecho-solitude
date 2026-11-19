@@ -1,0 +1,1 @@
+function e(e,t){return t=Math.max(1,Math.floor(t)),e=Math.max(1,Math.min(t,Math.floor(e))),t<=7?Array.from({length:t},(e,t)=>t+1):e<=4?[1,2,3,4,5,`gap`,t]:e>=t-3?[1,`gap`,t-4,t-3,t-2,t-1,t]:[1,`gap`,e-1,e,e+1,`gap`,t]}export{e as t};
